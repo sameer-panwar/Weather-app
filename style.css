@@ -4,20 +4,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: fit-content;
     margin: 0;
 }
 
 #weather-container{
     background: rgba(255, 255, 255, 0.3);
-    max-width: 400px;
+    max-width: min-content;
+    min-width: 400px;
     padding: 20px;
+    margin-top: 100px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     height: 60%;
+    transition: max-width 0.90s ease, max-width 0.90s ease, heigth 0.90s ease;
 }
 
 #h2, label, p{
@@ -68,22 +71,25 @@ button:hover{
     display: none;
 }
 
-#hourly-forcast{
+#hourly-forecast{
     margin-top: 50px;
     overflow-x: auto;
-    white-space: nowrap;
+    white-space: wrap;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-#hourly-item{
-    flex: 0 0 auto;
+.hourly-item{
     width: 80px;
-    display: flex;
-    align-items: center;
+    height: fit-content;
     margin-right: 10px;
-    color: white;
+    margin-bottom: 20px;
+   padding: 10px;
+   border: 1px solid white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .hourly-item img{
