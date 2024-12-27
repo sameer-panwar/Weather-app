@@ -1,7 +1,7 @@
 # Weather app
 This is a weather app created using Openweathermap api.
 
-HTML
+HTML,CSS
 
 # Live Preview
 
